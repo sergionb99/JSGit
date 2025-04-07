@@ -47,3 +47,20 @@ console.log("User Category: ", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
 console.log("Authentication Status: ", authenticationStatus);
+
+//Extra
+let employeeRole = "Employee";
+let employeeDiet;
+if (employeeRole == "Employee") {
+    employeeDiet = "Dietary Services";
+}
+else if (employeeRole == "Enrolled Member") {
+    employeeDiet = "Enrolled Member and one-on-one";
+}
+else if (employeeRole == "Subscriber") {
+    employeeDiet = "Partial Dietary Services";
+}
+else {
+    employeeDiet = "Nothing, you need to enroll or at least subscribe first to avail this facility";
+}
+console.log("You have access to: ", employeeDiet);
